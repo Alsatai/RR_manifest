@@ -18,12 +18,17 @@
            sync-c="true"
            sync-j="16" />
 
+  <remote  name="Darkness"
+           fetch="https://www.github.com/Darkness-Development"
+           revision="nougat"
+	   clone-depth="1" />
+
   <remote  name="rr"
 	   fetch="https://github.com/ResurrectionRemix"
 	   revision="nougat" />
 
   <!-- AOSP Projects -->
-  <project path="build" name="android_build" remote="rr" >
+  <project path="build" name="android_build" remote="Darkness" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -33,7 +38,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
-  <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="Darkness" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="LineageOS/android_dalvik" groups="pdk-cw-fs,pdk-fs" />
