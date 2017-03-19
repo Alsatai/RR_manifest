@@ -19,7 +19,7 @@
            sync-j="16" />
 
   <remote  name="Darkness"
-           fetch="https://www.github.com/Darkness-Development"
+           fetch="https://github.com/Darkness-Development"
            revision="nougat"
 	   clone-depth="1" />
 
