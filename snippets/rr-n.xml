@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="android" name="platform_manifest" remote="Darkness" />
+  <project path="android" name="RR_manifest" remote="Darkness" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="rr" />
-  <project path="vendor/cm" name="android_vendor_resurrection" remote="Darkness" />
+  <project path="vendor/cm" name="RR_vendor_resurrection" remote="Darkness" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="rr" />
   <project path="packages/apps/ResurrectionOTA" name="packages_apps_ResurrectionOTA" remote="rr" />
   <project path="packages/apps/ResurrectionStats" name="packages_apps_ResurrectionStats" remote="rr" />
@@ -22,12 +22,12 @@
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="rr" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="rr"/>
   <project path="frameworks/av" name="frameworks_av" remote="rr" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="Darkness" />
-  <project path="packages/apps/Settings" name="Resurrection_packages_apps_Settings" remote="Darkness" />
-  <project path="external/skia" name="external_skia" remote="Darkness" />
-  <project path="art" name="art" remote="Darkness" />
-  <project path="frameworks/native" name="frameworks_native" remote="Darkness" />
-  <project path="system/core" name="system_core" remote="Darkness" />
+  <project path="frameworks/base" name="RR_frameworks_base" remote="Darkness" />
+  <project path="packages/apps/Settings" name="RR_packages_apps_Settings" remote="Darkness" />
+  <project path="external/skia" name="RR_external_skia" remote="Darkness" />
+  <project path="art" name="RR_art" remote="Darkness" />
+  <project path="frameworks/native" name="RR_frameworks_native" remote="Darkness" />
+  <project path="system/core" name="RR_system_core" remote="Darkness" />
   <project path="external/google" name="android_external_google" remote="rr" />
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="rr" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="rr" />
