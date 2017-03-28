@@ -18,19 +18,11 @@
            sync-c="true"
            sync-j="16" />
 
-  <remote  name="Darkness"
-           fetch="https://github.com/Darkness-Development"
-           revision="nougat"
-	   clone-depth="1" />
-
   <remote  name="rr"
 	   fetch="https://github.com/ResurrectionRemix"
 	   revision="nougat" />
 
   <!-- AOSP Projects -->
-  <project path="build" name="android_build" remote="Darkness" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -38,7 +30,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
-  <project path="bionic" name="CM_android_bionic" groups="pdk" remote="Darkness" revision="cm-14.1" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="LineageOS/android_dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -272,7 +263,6 @@
   <project path="external/sonic" name="platform/external/sonic" groups="pdk" remote="aosp" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" remote="aosp" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" remote="aosp" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" remote="aosp" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" remote="aosp" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -363,7 +353,6 @@
   <project path="hardware/qcom/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="pdk" />
   <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="CM_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="Darkness" revision="cm-14.1" />
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom" />
@@ -384,7 +373,6 @@
   <project path="packages/apps/CertInstaller" name="LineageOS/android_packages_apps_CertInstaller" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" groups="pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="LineageOS/android_packages_apps_EmergencyInfo" />
-  <project path="packages/apps/Gallery2" name="CM_packages_apps_Gallery2" groups="pdk-fs" remote="Darkness" revision="cm-14.1" />
   <project path="packages/apps/HTMLViewer" name="LineageOS/android_packages_apps_HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="LineageOS/android_packages_apps_KeyChain" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="LineageOS/android_packages_apps_ManagedProvisioning" groups="pdk-fs" />
@@ -495,5 +483,8 @@
 
   <include name="snippets/rr-n.xml" />
   <include name="snippets/cm.xml" />
+
+  <!-- Darkness Development -->
+  <include name="snippets/darkness.xml" />
 
 </manifest>

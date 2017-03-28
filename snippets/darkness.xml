@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Darkness Development -->
+
+  <remote  name="Darkness"
+           fetch="https://github.com/Darkness-Development"
+           revision="nougat"
+           clone-depth="1" />
+
+  <project path="android" name="RR_manifest" remote="Darkness" />
+  <project path="vendor/cm" name="RR_vendor_resurrection" remote="Darkness" />
+  <project path="build" name="android_build" remote="Darkness" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="bionic" name="CM_android_bionic" groups="pdk" remote="Darkness" revision="cm-14.1" />
+  <project path="hardware/qcom/display" name="CM_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="Darkness" revision="cm-14.1" />
+  <project path="packages/apps/Gallery2" name="CM_packages_apps_Gallery2" groups="pdk-fs" remote="Darkness" revision="cm-14.1" />
+  <project path="frameworks/base" name="RR_frameworks_base" remote="Darkness" />
+  <project path="packages/apps/Settings" name="RR_packages_apps_Settings" remote="Darkness" />
+  <project path="external/skia" name="RR_external_skia" remote="Darkness" />
+  <project path="art" name="RR_art" remote="Darkness" />
+  <project path="frameworks/native" name="RR_frameworks_native" remote="Darkness" />
+  <project path="system/core" name="RR_system_core" remote="Darkness" />
+  <project path="external/sqlite" name="AOSP_external_sqlite" groups="pdk" remote="Darkness" />
+
+</manifest>
