@@ -17,7 +17,7 @@
   <project path="hardware/qcom/display" name="CM_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="Darkness" revision="cm-14.1" />
   <project path="frameworks/base" name="RR_frameworks_base" remote="Darkness" />
   <project path="packages/apps/Settings" name="RR_packages_apps_Settings" remote="Darkness" />
-  <project path="external/skia" name="RR_external_skia" remote="Darkness" />
+  <project path="external/skia" name="CM_external_skia" remote="Darkness" revision="cm-14.1" />
   <project path="art" name="RR_art" remote="Darkness" />
   <project path="frameworks/native" name="RR_frameworks_native" remote="Darkness" />
   <project path="system/core" name="RR_system_core" remote="Darkness" />
