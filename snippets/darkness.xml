@@ -21,6 +21,6 @@
   <project path="art" name="RR_art" remote="Darkness" />
   <project path="frameworks/native" name="RR_frameworks_native" remote="Darkness" />
   <project path="system/core" name="RR_system_core" remote="Darkness" />
-  <project path="external/sqlite" name="AOSP_external_sqlite" groups="pdk" remote="Darkness" />
+  <project path="external/sqlite" name="CM_external_sqlite" groups="pdk" remote="Darkness" revision="cm-14.1" />
 
 </manifest>
